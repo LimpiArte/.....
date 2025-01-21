@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg, #ffffff, #ffffff);
+    color: #ffffff;
+}
+h1  {
+      font-size: 2.3rem;
+      font-weight: bold;
+      background: linear-gradient(to top, #00c0ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+}
+
+p   {
+      font-size: 1rem;
+      color: black;
+}
+
+table {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-color: black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+th {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: #fdfdfd;
+    color: black;
+}
+
+tr:hover {
+    background: #ffeaa7;
+    cursor: pointer;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #34495e;
+}
+
+td:last-child {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contador button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contador button:hover {
+    background-color: #2980b9;
+}
+
+.contador span {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    font-size: 12px;
+}
+
+.total-container {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.list-container {
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.list-container ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+
+.list-container li {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    color: black;
+    
+}
+
+#send-whatsapp {
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#send-whatsapp:hover {
+    background-color: #1DA851;
+}
+
