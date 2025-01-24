@@ -34,6 +34,7 @@ const products = {
             "Desengrasante": 1400,
             "Suavizante celeste": 2000,
             "Shampoo tipo Pantene": 2000,
+            "shampoo plusbelle": 4300,
             "Acondicionador tipo Pantene": 2000,
             "Creolina": 5000,
             "Jabón líquido de mano": 2700,
