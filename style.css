@@ -1,0 +1,731 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía principal */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 20px; /* Espaciado interno */
+    color: #2c3e50; /* Color del texto */
+    background-image: url('pro.lipieza.fondo-2.jpg'); /* Imagen de fondo */
+    background-repeat: repeat; /* Repetir la imagen de fondo */
+    background-size: 200px auto; /* Tamaño específico para la imagen de fondo */
+    animation: moveBackground 10s linear infinite; /* Animación para mover el fondo */
+}
+
+/* Animación para mover el fondo hacia la derecha */
+@keyframes moveBackground {
+    from {
+        background-position: 0 0; /* Posición inicial */
+    }
+    to {
+        background-position: 200px 0; /* Posición final */
+    }
+}
+
+
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e0f7fa 30%, #80deea 50%, #00bcd4 70%);
+    background-size: 100% 300%; /* Ajusta el tamaño del fondo para la animación */
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.5);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    animation: colorWave 5s infinite ease-in-out;
+
+}
+
+/* Animación para la fluctuación de colores en la parte media */
+@keyframes colorWave {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 0% 40%;
+    }
+}
+
+/* Estilos para la imagen del logo */
+.logo-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+    box-shadow: 0 2px 6px rgba(0, 188, 212, 0.5);
+}
+
+/* Estilos para el contenedor del título */
+.title-container {
+    display: inline-block;
+    background: white; /* Fondo blanco */
+    padding: 20px 40px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilos para el título principal */
+h1 {
+    margin: 0;
+    font-size: 4rem; /* Aumentar aún más el tamaño del título */
+    color: transparent; /* Color del texto transparente */
+    background: linear-gradient(to bottom, #b2ebf2 30%, #4dd0e1 50%, #0097a7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleWave 5s infinite ease-in-out; /* Aplicar la animación al título */
+}
+
+/* Estilos específicos para el h1 dentro del header */
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Aumenta el tamaño del título */
+    color: transparent; /* Color del texto transparente */
+    background: linear-gradient(to bottom, #b2ebf2 30%, #4dd0e1 50%, #0097a7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleWave 5s infinite ease-in-out; /* Aplicar la animación al título */
+}
+
+
+/* Animación para la fluctuación de colores en el título */
+@keyframes titleWave {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 0% 40%;
+    }
+}
+
+
+
+/* Estilos para la imagen del logo */
+.logo-img {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-left: 20px; /* Margen a la izquierda */
+}
+
+/* Estilos para el título principal */
+h1 {
+    margin: 0; /* Elimina el margen por defecto */
+    font-size: 2rem; /* Tamaño de la fuente */
+    color: #00bcd4; /* Color del texto */
+    position: relative; /* Posicionamiento relativo */
+}
+/* Estilos específicos para el h1 dentro del header */
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Aumenta el tamaño del título */
+    color: transparent; /* Color del texto transparente */
+    background: linear-gradient(to bottom, #b2ebf2 30%, #4dd0e1 50%, #0097a7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleWave 5s infinite ease-in-out; /* Aplicar la animación al título */
+}
+
+
+/* Estilos para la línea debajo del título */
+h1::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: -10px; /* Posición desde abajo */
+    left: 0; /* Posición desde la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 5px; /* Altura de la línea */
+    background: linear-gradient(to right, #00bcd4, transparent); /* Gradiente de color */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para los detalles */
+details {
+    margin-bottom: 15px; /* Espacio debajo */
+    background: white; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra para dar profundidad */
+    width: 100%; /* Ancho completo */
+    max-width: 800px; /* Ancho máximo */
+    margin: 10px auto; /* Centrar y espaciado */
+}
+
+/* Estilos para el resumen */
+summary {
+    padding: 15px; /* Espaciado interno */
+    background: #00bcd4; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1.1em; /* Tamaño de la fuente */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Unir bordes */
+    margin-top: 10px; /* Espacio arriba */
+}
+
+/* Estilos para las celdas de la tabla */
+th, td {
+    padding: 15px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #ecf0f1; /* Borde inferior */
+}
+
+/* Estilos para los encabezados de la tabla */
+th {
+    background: #00bcd4; /* Color de fondo */
+    color: white; /* Color del texto */
+}
+
+/* Estilos para el contador */
+.contador {
+    display: flex; /* Uso de flexbox */
+    align-items: center; /* Alinear elementos al centro verticalmente */
+    gap: 4px; /* Espacio entre elementos */
+    flex-wrap: nowrap; /* No envolver elementos */
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+/* Estilos para los botones del contador */
+.contador button {
+    padding: 6px 10px; /* Espaciado interno */
+    min-width: 32px; /* Ancho mínimo */
+    font-size: 14px; /* Tamaño de la fuente */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+    order: 1; /* Orden de los elementos */
+    background: #2ecc71; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    transition: background 0.3s; /* Transición del fondo */
+}
+
+/* Estilos para el hover de los botones del contador */
+.contador button:hover {
+    background: #27ae60; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para el primer botón del contador */
+.contador button:first-child {
+    border-radius: 5px 0 0 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el último botón del contador */
+.contador button:last-child {
+    border-radius: 0 5px 5px 0; /* Bordes redondeados */
+}
+
+/* Estilos para el span del contador */
+.contador span {
+    order: 2; /* Orden del elemento */
+    margin-left: 8px; /* Margen a la izquierda */
+    min-width: 25px; /* Ancho mínimo */
+    text-align: center; /* Alinear texto al centro */
+    background: #f8f9fa; /* Color de fondo */
+    padding: 4px 8px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde */
+}
+
+/* Estilos para el contenedor del total */
+.total-container {
+    text-align: center; /* Alinear texto al centro */
+    margin: 30px auto; /* Centrar y espaciado */
+    padding: 20px; /* Espaciado interno */
+    background: #00bcd4; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 90%; /* Ancho */
+    max-width: 800px; /* Ancho máximo */
+    font-size: 1.2em; /* Tamaño de la fuente */
+}
+
+/* Estilos para la lista de #00bcd4 */
+#product-list {
+    list-style: none; /* Eliminar estilo de lista */
+    padding: 0; /* Eliminar padding */
+    width: 90%; /* Ancho */
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar y espaciado */
+}
+
+/* Estilos para los elementos de la lista de productos */
+#product-list li {
+    padding: 15px; /* Espaciado interno */
+    background: white; /* Color de fondo */
+    margin-bottom: 10px; /* Espacio debajo */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex; /* Uso de flexbox */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Alinear elementos al centro verticalmente */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el botón de enviar WhatsApp */
+#send-whatsapp {
+    display: block; /* Mostrar como bloque */
+    margin: 30px auto; /* Centrar y espaciado */
+    padding: 15px 40px; /* Espaciado interno */
+    background: #25D366; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    font-size: 1.1em; /* Tamaño de la fuente */
+    transition: transform 0.3s; /* Transición de transformación */
+    text-align: center;
+    text-align-last: center;
+}
+
+/* Estilos para el hover del botón de enviar WhatsApp */
+#send-whatsapp:hover {
+    transform: scale(1.05); /* Escalar al pasar el cursor */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Alinear texto al centro */
+    padding: 20px; /* Espaciado interno */
+    color: #7f8c8d; /* Color del texto */
+    margin-top: 50px; /* Espacio arriba */
+    background: white; /* Color de fondo */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+    position: relative; /* Posicionamiento relativo */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar y espaciado */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el contenido del carrusel */
+.carousel-content {
+    display: flex; /* Uso de flexbox */
+    transition: transform 0.5s ease-in-out; /* Transición de transformación */
+}
+
+/* Estilos para los elementos del carrusel */
+.carousel-item {
+    min-width: 100%; /* Ancho mínimo */
+    position: relative; /* Posicionamiento relativo */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-item img {
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Altura */
+    object-fit: cover; /* Cubrir el contenedor */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Estilos para el texto del carrusel */
+.carousel-text {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* Posición desde abajo */
+    left: 20px; /* Posición desde la izquierda */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra del texto */
+}
+
+/* Estilos para los botones del carrusel */
+.carousel-btn {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Posición desde arriba */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    background: rgba(0,0,0,0.5); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    transition: background 0.3s; /* Transición del fondo */
+}
+
+/* Estilos para el hover de los botones del carrusel */
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.8); /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para el botón anterior del carrusel */
+.carousel-prev {
+    left: 0; /* Posición desde la izquierda */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados */
+}
+
+/* Estilos para el botón siguiente del carrusel */
+.carousel-next {
+    right: 0; /* Posición desde la derecha */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados */
+}
+
+/* Estilos para los indicadores del carrusel */
+.carousel-indicators {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* Posición desde abajo */
+    left: 50%; /* Posición desde la izquierda */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    display: flex; /* Uso de flexbox */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/* Estilos para los indicadores individuales del carrusel */
+.carousel-indicator {
+    width: 12px; /* Ancho */
+    height: 12px; /* Altura */
+    border-radius: 50%; /* Bordes redondeados */
+    background: rgba(255,255,255,0.5); /* Color de fondo */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    transition: background 0.3s; /* Transición del fondo */
+}
+
+/* Estilos para el indicador activo del carrusel */
+.carousel-indicator.active {
+    background: white; /* Color de fondo */
+}
+
+/* Estilos para el contenedor de búsqueda */
+.search-container {
+    position: relative; /* Posicionamiento relativo */
+    width: 300px; /* Ancho */
+    margin: 50px auto; /* Centrar y espaciado */
+    background-color: #00bcd4;
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para el contenedor del campo de búsqueda */
+.search-box-wrapper {
+    display: flex; /* Uso de flexbox */
+    align-items: center; /* Alinear elementos al centro verticalmente */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Estilos para el icono de búsqueda */
+.search-icon {
+    font-size: 18px; /* Tamaño de la fuente */
+    margin-right: 10px; /* Margen a la derecha */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+}
+
+/* Estilos para el campo de búsqueda */
+.search-box {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+    outline: none; /* Eliminar el contorno */
+}
+
+/* Estilos para los resultados de búsqueda */
+.search-results {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 100%; /* Posición desde arriba */
+    left: 0; /* Posición desde la izquierda */
+    right: 0; /* Posición desde la derecha */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo */
+    z-index: 1000; /* Índice de apilamiento */
+    display: none; /* Ocultar por defecto */
+}
+
+/* Estilos para los elementos de los resultados de búsqueda */
+.search-results div {
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+}
+
+/* Estilos para el hover de los elementos de los resultados de búsqueda */
+.search-results div:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilo para el h3 dentro del contenedor .list-container */
+.list-container h3 {
+    font-size: 24px; /* Tamaño de la fuente */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Grosor de la fuente */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-align: center; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    border-bottom: 2px solid #ccc; /* Línea debajo del título */
+    padding-bottom: 5px; /* Espacio debajo del texto dentro del borde */
+    background-color: #00bcd4 ;
+    border-radius: 10px;
+}
+
+
+/* Estilo para el h3 dentro del contenedor .list-container */
+.list-container h3 {
+    font-size: 24px; /* Tamaño de la fuente */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Grosor de la fuente */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-align: center; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    border-bottom: 2px solid #ccc; /* Línea debajo del título */
+    padding-bottom: 5px; /* Espacio debajo del texto dentro del borde */
+    background-color: #00bcd4 ;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Estilos para el botón de mostrar/ocultar comentarios */
+.comment-section button {
+    width: 100%; /* Ancho completo */
+    padding: 15px; /* Espaciado interno */
+    background-color: #00bcd4; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    font-size: 1em; /* Tamaño de la fuente */
+    transition: background 0.3s; /* Transición del fondo */
+    margin-bottom: 20px; /* Espacio debajo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el hover del botón de mostrar/ocultar comentarios */
+.comment-section button:hover {
+    background-color: #00bcd4; /* Color de fondo azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para el formulario de comentarios */
+.comment-form {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 20px; /* Espacio debajo */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para los campos del formulario de comentarios */
+.comment-form input, .comment-form textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio debajo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de la fuente */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+}
+
+/* Estilos para el botón de enviar comentario */
+.comment-form button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #00bcd4; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    font-size: 1em; /* Tamaño de la fuente */
+    transition: background 0.3s; /* Transición del fondo */
+}
+
+/* Estilos para el hover del botón de enviar comentario */
+.comment-form button:hover {
+    background-color: #00bcd4; /* Color de fondo azul más claro al pasar el cursor */
+}
+
+/* Estilos para los comentarios individuales */
+.comment {
+    border-bottom: 1px solid #ecf0f1; /* Borde inferior gris claro */
+    padding: 15px 0; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo */
+    background-color: white;
+}
+
+/* Estilos para el encabezado de los comentarios */
+.comment-header {
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 5px; /* Espacio debajo */
+    color: #00bcd4; /* Color del texto azul */
+    font-size: 1.2em; /* Tamaño de la fuente */
+}
+
+/* Estilos para el cuerpo de los comentarios */
+.comment-body {
+    margin-bottom: 10px; /* Espacio debajo */
+    color: #2c3e50; /* Color del texto gris oscuro */
+    font-size: 1em; /* Tamaño de la fuente */
+}
+
+/* Estilos para las acciones de los comentarios */
+.comment-actions {
+    display: flex; /* Usar flexbox para alinear los botones */
+    justify-content: flex-end; /* Alinear los botones al final del contenedor */
+    margin-top: 10px; /* Espacio en la parte superior del contenedor */
+}
+
+/* Estilos para los botones de las acciones de los comentarios */
+.comment-actions button {
+    background-color: #00bcd4; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    margin-left: 5px; /* Margen a la izquierda */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    transition: background 0.3s; /* Transición del fondo */
+    font-size: 12px; /* Tamaño de fuente */
+}
+
+/* Estilos para el hover de los botones de las acciones de los comentarios */
+.comment-actions button:hover {
+    background-color: #00bcd4; /* Color de fondo azul más claro al pasar el cursor */
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: red; /* Color del texto rojo */
+    font-size: 0.9em; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Espacio debajo */
+}
+
+/* Estilos para los mensajes de éxito */
+.success {
+    color: green; /* Color del texto verde */
+    font-size: 0.9em; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Espacio debajo */
+}
+
+
+/* Estilos para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambiar la dirección de flexbox */
+        text-align: center; /* Alinear texto al centro */
+    }
+
+    .logo-img {
+        margin: 15px 0 0 0; /* Margen superior */
+    }
+
+    details {
+        width: 95%; /* Ancho */
+    }
+
+    th, td {
+        padding: 12px; /* Espaciado interno */
+        font-size: 14px; /* Tamaño de la fuente */
+    }
+
+    .contador {
+        gap: 4px; /* Espacio entre elementos */
+    }
+
+    .contador button {
+        padding: 5px 8px; /* Espaciado interno */
+        font-size: 12px; /* Tamaño de la fuente */
+    }
+
+    .comment-section {
+        padding: 15px; /* Espaciado interno */
+    }
+
+    .comment-header {
+        font-size: 1em; /* Tamaño de la fuente */
+    }
+
+    .comment-body {
+        font-size: 0.9em; /* Tamaño de la fuente */
+    }
+
+    .comment-actions button {
+        padding: 4px 8px; /* Espaciado interno */
+        font-size: 0.8em; /* Tamaño de la fuente */
+    }
+}
+
+/* Estilos para pantallas de hasta 480px de ancho */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Espaciado interno */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Tamaño de la fuente */
+    }
+
+    summary {
+        padding: 12px; /* Espaciado interno */
+        font-size: 1em; /* Tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 8px; /* Espaciado interno */
+        display: table-cell; /* Mostrar como celda de tabla */
+        min-width: auto; /* Ancho mínimo automático */
+        white-space: nowrap; /* Evitar saltos de línea */
+    }
+
+    td:nth-child(1),
+    td:nth-child(2) {
+        white-space: normal; /* Permitir saltos de línea */
+        max-width: 120px; /* Ancho máximo */
+        word-break: break-word; /* Romper palabras */
+    }
+
+    table {
+        display: block; /* Mostrar como bloque */
+        overflow-x: auto; /* Desplazamiento horizontal */
+    }
+
+    .contador {
+        gap: 2px; /* Espacio entre elementos */
+    }
+
+    .contador span {
+        margin-left: 6px; /* Margen a la izquierda */
+        min-width: 20px; /* Ancho mínimo */
+        padding: 3px 6px; /* Espaciado interno */
+    }
+
+    .contador button {
+        padding: 4px 6px; /* Espaciado interno */
+        min-width: 28px; /* Ancho mínimo */
+    }
+
+    #product-list li {
+        padding: 12px; /* Espaciado interno */
+        font-size: 14px; /* Tamaño de la fuente */
+    }
+
+   /* Estilos para el botón de enviar WhatsApp */
+    #send-whatsapp {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 30px auto; /* Centrar y espaciado */
+    padding: 15px 40px; /* Espaciado interno */
+    background: #25D366; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    font-size: 1.5em; /* Aumentar el tamaño de la fuente */
+    transition: transform 0.3s; /* Transición de transformación */
+    text-align: center;
+}
+
+/* Estilos para el hover del botón de enviar WhatsApp */
+#send-whatsapp:hover {
+    transform: scale(1.05); /* Escalar al pasar el cursor */
+}
+    
+    
