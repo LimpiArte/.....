@@ -118,3 +118,66 @@ hr {
   border: none;
   border-top: 1px dashed #d9c6e6;
 }
+/* Tarjetas de producto */
+.producto-item {
+  background: #fdf6ff;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e4c9ff;
+  box-shadow: 0 4px 10px rgba(123, 75, 148, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Título del producto */
+.producto-item h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #5c3b74;
+}
+
+/* Detalles del producto */
+.producto-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Botones dentro de la tarjeta */
+.producto-botones {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Botón editar */
+.btn-editar {
+  background-color: #c6e2ff;
+  color: #1e4b7a;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+  background-color: #aed4f8;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+  background-color: #ffc6c6;
+  color: #8c1c1c;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+  background-color: #ffaaaa;
+}
