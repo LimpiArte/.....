@@ -1,6 +1,6 @@
 // admin.js
 
-// Conexión a Firebase (ya inicializada en admin.html)
+// Conexión a Firebase (ya inicializada en el HTML)
 let products = {};
 let editandoProductoId = null;
 
@@ -66,27 +66,29 @@ function renderProductosAdmin() {
   }
 
   Object.entries(products).forEach(([categoria, lista]) => {
-    const titulo = document.createElement('h3');
+    const grupo = document.createElement('div');
+
+    const titulo = document.createElement('h2');
     titulo.textContent = categoria;
-    contenedor.appendChild(titulo);
+    titulo.style.marginTop = '20px';
+    titulo.style.color = '#7b4b94';
+    grupo.appendChild(titulo);
 
     Object.entries(lista).forEach(([nombre, precio]) => {
       const div = document.createElement('div');
-      div.className = 'admin-producto';
-      div.style.marginBottom = '10px';
-      div.style.display = 'flex';
-      div.style.justifyContent = 'space-between';
-      div.style.alignItems = 'center';
-
+      div.className = 'producto-item';
       div.innerHTML = `
-        <span><strong>${nombre}</strong> - $${precio}</span>
-        <div>
-          <button onclick="editarProducto('${categoria}', '${nombre}')">✏️</button>
-          <button onclick="eliminarProducto('${categoria}', '${nombre}')">🗑️</button>
+        <h3>${nombre}</h3>
+        <p><strong>Precio:</strong> $${precio}</p>
+        <div class="producto-botones">
+          <button class="btn-editar" onclick="editarProducto('${categoria}', '${nombre}')">Editar</button>
+          <button class="btn-eliminar" onclick="eliminarProducto('${categoria}', '${nombre}')">Eliminar</button>
         </div>
       `;
-      contenedor.appendChild(div);
+      grupo.appendChild(div);
     });
+
+    contenedor.appendChild(grupo);
   });
 }
 
