@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Panel Admin - LimpiArte</title>
-  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="contenedor">
+  <main>
     <h1>Panel de Administración</h1>
-    <form id="admin-form" class="formulario">
+
+    <form id="admin-form">
       <input id="admin-categoria" placeholder="Categoría" required />
       <input id="admin-nombre" placeholder="Nombre del producto" required />
       <input id="admin-precio" type="number" placeholder="Precio" required />
-      <div class="botones-form">
-        <button type="submit" class="btn guardar">Guardar producto</button>
-        <button type="button" id="cancelar-edicion" class="btn cancelar" style="display: none;">Cancelar</button>
-      </div>
+      <input id="admin-file" type="file" accept="image/*,video/*" />
+      <button type="submit">Guardar producto</button>
+      <button type="button" id="cancelar-edicion" style="display: none;">Cancelar</button>
     </form>
+
     <hr />
-    <div id="admin-productos" class="productos-lista"></div>
+    <div id="admin-productos"></div>
   </main>
 
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
+
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyAiwDOgpv3ptk6crclZBf1uzOG5CtHflq0",
       authDomain: "limpiarte-6335c.firebaseapp.com",
       projectId: "limpiarte-6335c",
-      storageBucket: "limpiarte-6335c.firebasestorage.app",
+      storageBucket: "limpiarte-6335c.appspot.com",
       messagingSenderId: "766295688628",
       appId: "1:766295688628:web:8505a8a0f49bdb096b1ee1",
       measurementId: "G-XR1F2V8YW3"
     };
+
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
+    const storage = firebase.storage();
   </script>
+
   <script src="admin.js"></script>
 </body>
 </html>
